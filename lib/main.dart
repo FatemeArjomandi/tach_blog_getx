@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tach_blog_getx/view/isolate_main.dart';
 import 'package:tach_blog_getx/view/main_screen.dart';
 import 'package:tach_blog_getx/view/product_view_getbuilder.dart';
 import 'package:tach_blog_getx/view/product_view_getbuilderUniqId.dart';
+
+import 'view/product_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +39,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
-      home: const ProductViewGetBuilderUniqId()
+      home: const IsolateMain()
     );
   }
 }
